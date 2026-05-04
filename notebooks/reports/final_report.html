@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Финальный отчет MovieLens</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        .stat-box { background: #f8f9fa; padding: 15px; margin: 10px 0; border-left: 5px solid #3498db; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #2980b9; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Финальный аналитический отчет: MovieLens</h1>
+    <p>Дата генерации: 04.05.2026 15:11</p>
+
+    <h2>1. Общие показатели</h2>
+    <div class="stat-box">
+        Всего оценок: <span class="stat-value">25,000,095</span>
+    </div>
+    <div class="stat-box">
+        Активных пользователей: <span class="stat-value">162,541</span>
+    </div>
+    <div class="stat-box">
+        Средний рейтинг: <span class="stat-value">3.53</span>
+    </div>
+
+    <h2>2. Вовлеченность и Удержание</h2>
+    <div class="stat-box">
+        Средний DAU: <span class="stat-value">162</span>
+    </div>
+    <div class="stat-box">
+        Day-1 Retention: <span class="stat-value">18.8%</span>
+    </div>
+    <div class="stat-box">
+        Churn Rate: <span class="stat-value">81.2%</span>
+    </div>
+
+    <h2>3. Топ фильмов (по рейтингу)</h2>
+    <table>
+        <tr><th>Фильм</th><th>Рейтинг</th><th>Кол-во оценок</th></tr>
+        <tr><td>Planet Earth II (2016)</td><td>4.48</td><td>1124</td></tr><tr><td>Planet Earth (2006)</td><td>4.46</td><td>1747</td></tr><tr><td>Shawshank Redemption, The (1994)</td><td>4.41</td><td>81482</td></tr><tr><td>Band of Brothers (2001)</td><td>4.4</td><td>1356</td></tr><tr><td>Cosmos</td><td>4.33</td><td>277</td></tr>
+    </table>
+
+    <h2>4. Детальная таблица метрик</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Категория</th>
+      <th>Метрика</th>
+      <th>Значение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Общие</td>
+      <td>Всего оценок</td>
+      <td>25,000,095</td>
+    </tr>
+    <tr>
+      <td>Общие</td>
+      <td>Пользователей</td>
+      <td>162,541</td>
+    </tr>
+    <tr>
+      <td>Вовлеченность</td>
+      <td>Средний DAU</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <td>Удержание</td>
+      <td>Day-1 Retention</td>
+      <td>18.8%</td>
+    </tr>
+    <tr>
+      <td>Удержание</td>
+      <td>Day-7 Retention</td>
+      <td>100.0%</td>
+    </tr>
+  </tbody>
+</table>
+
+    <p style="margin-top: 50px; color: #7f8c8d; text-align: center;">
+        Отчет сгенерирован автоматически.
+    </p>
+</body>
+</html>
