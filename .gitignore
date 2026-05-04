@@ -1,0 +1,27 @@
+﻿# Данные и архивы (НИКОГДА не коммитим!)
+data/
+*.csv
+*.zip
+*.parquet
+*.duckdb
+*.db
+*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# IDE и OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
